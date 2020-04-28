@@ -42,7 +42,9 @@ html{
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
     font-family: var(--ff-primary);
     font-style: var(--fs-body);
     line-height: 1.6;
@@ -137,12 +139,47 @@ header {
     padding: 1em;
 }
 
-.logo {
+.cl-logo {
+    height: 5em;
+    transition: 1.5s ease-in-out;
     max-width: 100px;
+    max-height: 100px;
+}
+.cl-logo:hover {
+    transform: rotate(1800deg);
+    transition: 15.0s linear;
+}
+
+.logo {
+    max-height: 100px;
 
 }
 
-.nav {
+
+
+header p {
+    margin-top: 1.5em;
+    font-size: var(--fs-h3);
+    
+}
+
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.nav__link{
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--clr-dark);
+}
+/* .nav {
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -207,8 +244,8 @@ header {
 
 .nav-open .hamburger::after {
     opacity: 0;
-}
-
+} */
+/* 
 .hamburger {
     display: block;
     position: relative;
@@ -233,7 +270,7 @@ header {
 }
 
 .hamburger::before {top: 6px;}
-.hamburger::after {bottom: 6px;}
+.hamburger::after {bottom: 6px;} */
 
 
 
@@ -383,12 +420,15 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
     
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-light);
     overflow: hidden;
+    border-radius: 5px;;
 }
 
 .portfolio__img {
@@ -407,6 +447,21 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .75;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 11%;
+    right: 4em;
+    z-index: 99;
+    width: 1.5em;
+    height:1.5em;
+    cursor: pointer;
+    outline: none !important;
+    background: url('../img/chevron-up.png') center / contain no-repeat;
+    opacity: 0.45;
+
+    transition: 0.28s;
 }
 
 /* footer */

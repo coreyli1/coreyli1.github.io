@@ -19,17 +19,19 @@
     </head>
     <body id="top">
         <header>
-            <a href="index.html">
-                <img src="img/c-logo.png" alt="Corey Li logo" class="cl-logo">
-            </a>
-
+            <div class="logo">
+                <img src="img/c-logo.png" alt="">
+                <p>Corey Li</p>
+            </div>
             <!-- <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button> -->
             <nav class="nav">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="resume.pdf" class="nav__link">Resume</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Resume</a></li>
+                </ul>
             </nav>
         
 
@@ -44,10 +46,47 @@
             <img src="" alt="" class="intro__img">
         </section>
 
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Develop</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Manage</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat.
+                    </p>
+                </div>
+
+            </div>
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
 
 
         <!-- My Work -->
         <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
                 <a href="portfolio-item.html" class="portfolio__item">
