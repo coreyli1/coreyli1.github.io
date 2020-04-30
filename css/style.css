@@ -10,9 +10,11 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #93EE72;
+    --clr-light: #FCFCFC;
+    --clr-dark: #1E1E1E;
+    --clr-accent: #51e31c;
+
+
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -44,7 +46,7 @@ body {
     color: var(--clr-dark);
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 90%;
     font-family: var(--ff-primary);
     font-style: var(--fs-body);
     line-height: 1.6;
@@ -105,11 +107,10 @@ h3{ font-size: var(--fs-h3) }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    font-size: var(--fs-h2);
 }
 
-.section__title--intro strong{
-    display: block;
-}
+
 
 .section__subtitle{
     margin: 0;
@@ -178,143 +179,33 @@ header p {
     text-decoration: none;
     padding: 8px;
     color: var(--clr-dark);
-}
-/* .nav {
-    position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0 ,.5, 1);
+    margin: 2px;
 }
 
-.nav__list{
-    list-style: none;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav__link{
-    color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
-    text-decoration: none;
-}
-
-.nav-link:hover{
+.nav__link:hover, .active{
     color: var(--clr-accent);
-}
-
-.nav-toggle {
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
-}
-
-.nav-open .nav {
-    transform: translateX(0);
-}
-
-.nav-open .nav-toggle{
-    position: fixed;
-}
-
-.nav-open .hamburger {
-    transform: rotate(.625turn);
-}
-
-.nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after {
-    opacity: 0;
-} */
-/* 
-.hamburger {
-    display: block;
-    position: relative;
 
 }
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.hamburger::before {top: 6px;}
-.hamburger::after {bottom: 6px;} */
-
 
 
 /* Intro section */
 
 .intro {
     position: relative;
+    
 }
 
-.intro--img {
-    box-shadow: var(--bs);
+.section__title--intro{
 }
 
-@media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-
-    }
-
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-         
-    }
+.ut{
+    color: #C50;
 }
+
+.adobe{
+    color: #F00;
+}
+
 
 /* My services */
 
@@ -386,7 +277,7 @@ header p {
         grid-column-gap: 2em;
 
     }
-    .secction__title--about {
+    .section__title--about {
         grid-area: title;
     }
 
@@ -411,7 +302,6 @@ header p {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
 }
@@ -419,16 +309,17 @@ header p {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-column-gap: 5vw;
-    grid-row-gap: 5vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vw;
     
 }
 
 .portfolio__item {
     background: var(--clr-light);
     overflow: hidden;
-    border-radius: 5px;;
+    border-radius: 10px;
+    border: 10px solid black;
 }
 
 .portfolio__img {
@@ -467,8 +358,8 @@ header p {
 /* footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-accent);
+    background: #696969;
+    color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
