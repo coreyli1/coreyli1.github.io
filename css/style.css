@@ -199,9 +199,6 @@ header p {
     
 }
 
-.section__title--intro{
-}
-
 .ut{
     color: #C50;
 }
@@ -213,14 +210,18 @@ header p {
 
 /* About me section */
 
-
+.about-me__container{
+    margin-top: 2em;
+}
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .about-me__img {
-    max-width: 60%;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
 }
 
 @media (min-width: 800px) {
@@ -310,7 +311,7 @@ header p {
 /* footer */
 
 .footer {
-    background: #696969;
+    background: #9c9c9c;
     color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
