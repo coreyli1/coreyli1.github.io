@@ -41,6 +41,9 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar { 
+    display: none;
+}
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -50,6 +53,7 @@ body {
     font-family: var(--ff-primary);
     font-style: var(--fs-body);
     line-height: 1.6;
+    
 }
 
 section {
@@ -207,53 +211,6 @@ header p {
 }
 
 
-/* My services */
-
-.my-services {
-    background-color: var(--clr-dark);
-    background-image:;
-    background-size: cover;
-    color: var(--clr-light);
-    text-align: center;
-}
-
-.section__title--services {
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.services {
-    margin-bottom: 4em;
-}
-
-.service {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .service + .service {
-        margin-left: 2em;
-    }
-}
 /* About me section */
 
 
@@ -263,40 +220,35 @@ header p {
 }
 
 .about-me__img {
-    box-shadow: var(--bs);
+    max-width: 60%;
 }
 
-@media (min-width: 600px){
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-
+@media (min-width: 800px) {
+    .about-me__container{
+        display: flex;
+        height: 30em;
+        justify-content: space-around;
+        
     }
-    .section__title--about {
-        grid-area: title;
+    .section__title--about{
+        order: 1;
     }
 
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc( 200px + 4em)
-    }
+    .about-me__body {
+        font-size: 18px;
+        max-width: 50%;
+        align-self: center;
+        padding: 10px;
 
+    }
+    
     .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
+        max-width: 50%;
+        align-self: center;
+        padding: 10px;
     }
 }
+
 
 
 /* My Work */
