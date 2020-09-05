@@ -207,6 +207,9 @@ header p {
     color: #F00;
 }
 
+.tetrio{
+    color: #A020F0;
+}
 
 /* About me section */
 
@@ -311,11 +314,13 @@ header p {
 /* footer */
 
 .footer {
-    background: #9c9c9c;
     color: var(--clr-dark);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1em 0;
     font-size: var(--fs-h3);
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer a { 
@@ -340,8 +345,8 @@ header p {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
     padding: 0;
+    margin: 0;
 
 }
 
@@ -353,15 +358,37 @@ header p {
     padding: .5em;
 }
 
-/* Individual portoflio item styles */
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
+/* Portfolio Pages */
+
+.portfolio__section {
+    text-align: center;
+    max-width: 40em;
     margin: 0 auto;
+
 }
 
-.portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.portfolio__title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.portfolio__title h1{
+    align-self: center;
+}
+
+.intro__img {
+    height: 10em;
+    width: 10em;
+}
+
+.portfolio__section{
+    padding-top: 2em;
+
+}
+
+
+
+.collabify-title {
+    font-family: 'Righteous', cursive;
 }
