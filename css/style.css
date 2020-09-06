@@ -370,6 +370,7 @@ header p {
 .portfolio__title {
     display: flex;
     justify-content: center;
+    margin-bottom: .75em;
     
 }
 
@@ -378,8 +379,8 @@ header p {
 }
 
 .intro__img {
-    height: 10em;
-    width: 10em;
+    height: 7em;
+    width: 7em;
 }
 
 .portfolio__section{
